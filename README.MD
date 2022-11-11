@@ -4,18 +4,19 @@
 
 # How to run
 
-> Just navigate to [translate.html](translate.html) file and run in browser.
-> If you want to host in online, you can take help from my article where I've explained the whole process.
-> [Link 1](https://dev.to/nitinkumar30/publish-static-website-using-gitlab-render-for-free-3h57)
+> Just navigate to [translate.html](translate.html) file and run in browser.  
+> If you want to host in online, you can take help from my article where I've explained the whole process.  
+> [Link 1](https://dev.to/nitinkumar30/publish-static-website-using-gitlab-render-for-free-3h57)  
 > [Link 2](https://dev.to/nitinkumar30/publish-your-static-website-for-free-7fg)
 
-# Working
+# Frontend/Homepage
 
+![image](https://user-images.githubusercontent.com/40369168/201408331-8c2f9724-e85c-419a-964d-533332891669.png)
 
 
 # Live working
 
-
+https://user-images.githubusercontent.com/40369168/201408540-e9ab24f8-9220-46bb-a637-a0647adc04c1.mp4
 
 
 # Author
