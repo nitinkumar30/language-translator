@@ -18,7 +18,7 @@ body{
   max-width: 690px;
   width: 100%;
   padding: 30px;
-  background: #fff;
+  background: #000000;
   border-radius: 7px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.01);
 }
@@ -44,6 +44,7 @@ body{
   font-size: 18px;
   padding: 10px 15px;
   border-radius: 5px;
+  color:#fff;
 }
 .text-input textarea::placeholder{
   color: #b7b6b6;
@@ -152,4 +153,63 @@ body{
   .controls .exchange{
     font-size: 14px;
   }
+}
+
+
+/* // ----------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    background: #000000;
+}
+.main{
+    width: 350px;
+    height: 250px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#text{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.generateBtn{
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #1687a7;
+    color: white;
+}
+
+
+
+/* --------------------------------- */
+
+#particles-js{
+  height: 100%;
+  background: #000000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0
+}
+
+#particles-js canvas {
+  display:block;
+  background: rgb(33,36,50);
+  position: fixed;
+  z-index: -1;
 }
