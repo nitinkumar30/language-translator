@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Language Translator | Nitin</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <!-- Font Awesome CDN Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- particles.js container -->
+  <!-- <div id="particles-js"> -->
+
+  <!-- scripts -->
+  <script src="particle/particles.js"></script>
+  <script src="js/app.js"></script>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <div class="navbar-brand" href="#">
+          <img src="aju-logo.png">
+        </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><button href="#">Hindi</button></li>
+        <li><button href="#">English</button></li>
+        <li><button href="#">Bengali</button></li>
+        <li><button href="#">Arabic</button></li>
+        <li><button href="#">Greek</button></li>
+        <li><button href="#">French</button></li>
+        <li><button href="#">Italian</button></li>
+        <li><button href="#">Korean</button></li>
+        <li><button href="#">Punjabi</button></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="wrapper">
+      <div class="text-input">
+        <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+        <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+      </div>
+      <ul class="controls">
+        <li class="row from">
+          <div class="icons">
+            <i id="from" class="fas fa-volume-up"></i>
+            <i id="from" class="fas fa-copy"></i>
+          </div>
+          <select></select>
+        </li>
+        <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+        <li class="row to">
+          <select></select>
+          <div class="icons">
+            <i id="to" class="fas fa-volume-up"></i>
+            <i id="to" class="fas fa-copy"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button onclick="generateColor()" class="generateBtn">Real time Language Translation app</button>
+  </div>
+
+  <script>
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  </script>
+
+
+  <!-- SCROLL TO TOP BUTTON -->
+
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top" href="#">SCROLL TO TOP</button>
+
+
+  <!-- KEEP YOU AD CODE HERE -->
+
+  <!-- ----------------------- -->
+  <br><br><br><br><br>
+  <div class="panel">
+  <div class="panel panel-default col-sm-8">
+    <div class="panel-heading" style="font-size:23px">Additional Information</div>
+    <div class="panel-body">
+      <p style="font-size:20px;">
+        Word or two about our Hindi tool:
+      </p>
+      <p style="font-size:20px;">
+        Our FREE online Hindi typing software uses Google transliteration typing service. It provides fast and accurate
+        typing - making it easy to type the Hindi language anywhere on the Web.
+
+      </p>
+      <p style="font-size:20px;">
+
+        After you type a word in English and hit a space bar key, the word will be transliterated into Hindi. You can
+        also hit a backspace key or click on the selected word to get more options on the dropdown menu.
+
+      </p>
+
+      <p style="font-size:20px;">
+
+        The process of transliterating Hindi to English is very quick and allows unlimited characters and words to be
+        transliterated. Moreover, when you enter the space bar, the text will be saved on your computer automatically.
+        So in case of a browser crash or on the second visit, the previously transliterated text would be recovered.
+
+      </p>
+
+      <p style="font-size:20px;">
+
+        Our Easy Hindi Typing is really simple and easy to use as you don’t need to remember complex Hindi keyboard
+        layout or practice Hindi typing for days and days to be able to type fluently in Hindi.
+
+      </p>
+
+      <p style="font-size:20px;">
+
+        Once you have finished typing you can email them to anyone for FREE of cost. Alternatively, you can copy the
+        text and share it either on social media such as Facebook, Twitter, blog, comment or paste it on the Word
+        Document for further formatting and processing of the text.
+
+      </p>
+      <p style="font-size:20px;">
+
+        If you have any suggestions or feedback then please leave a comment on our Facebook page. Finally, but most
+        importantly, please like and share our page on Facebook with your loved one.
+
+      </p>
+
+
+      </p>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+
+    <!-- KEEP YOU AD CODE HERE -->
+
+  </div>
+
+  <!-- Another details -->
+
+  <div class="panel panel-default panel-success col-sm-8">
+    <div class="panel-heading" style="font-size:23px">Other features</div>
+    <div class="panel-body">
+      <p style="font-size:20px;">
+        Many other features you should know:
+      </p>
+      <p style="font-size:20px;">
+        Typing romanized English words into the above text area will be converted into Hindi.
+
+      </p>
+      <p style="font-size:20px;">
+
+        For example, typing "Aap Kasai hai?" becomes "आप कैसे हैं?".
+
+      </p>
+
+      <p style="font-size:20px;">
+
+        Use the backspace key or click on any words to get more choices of words on a dropdown menu.
+
+      </p>
+
+      <p style="font-size:20px;">
+
+        Press (Ctrl + G) together to toggle (switch) between English and Hindi language.
+
+      </p>
+
+      <p style="font-size:20px;">
+
+        Any text you type on the above text area is automatically saved on your computer for a week. This is useful in
+        the event of a crash or sudden shutdown of your computer.
+
+      </p>
+      <p style="font-size:20px;">
+
+        Easily copy or download Hindi text on your computer or mobile devices.
+
+      </p>
+      <p style="font-size:20px;">
+
+        You can insert special characters (e.g. ।, ॐ, ॥, ॰) and many other Hindi characters by clicking on the help
+        button - which is located just below the bottom right corner of the typing text area.
+
+      </p>
+      <p style="font-size:20px;">
+
+        You can also send email in Hindi to your friends and family for FREE.
+
+      </p>
+      <p style="font-size:20px;">
+
+        Finally, if you like to support us then please donate or buy us a coffee at ko-fi.com.
+
+      </p>
+
+
+      </p>
+    </div>
+  </div>
+</div>
+
+  <!-- Hindi Alphabets -->
+
+  <div class="panel panel-default panel-success col-sm-8">
+    <div class="panel-heading" style="font-size:23px">Hindi Alphabets</div>
+    <div class="panel-body">
+      <p style="font-size:20px;">
+        Hindi alphabets you should know:
+      </p>
+      <p style="font-size:20px;">
+        Hindi got its name from the Persian word Hind, which means ”land of the Indus River”. It is spoken by more than
+        528 million people as a first language and around 163 million use it as a second language in India, Bangladesh,
+        Mauritius and other parts of South Asia.
+
+
+      </p>
+      <p style="font-size:20px;">
+
+        Hindi is written with the Devanagari alphabet, developed from the Brahmi script in the 11th century AD. It
+        contains 36 consonants and 12 vowels. In addition, it has its own representations of numbers that follow the
+        Hindu-Arabic numeral system.
+
+      </p>
+
+      <p style="font-size:20px;">
+
+        14 Independent Vowels (१३ स्वर): अ, आ, इ, ई, उ, ऊ, ए, ऐ, ओ, औ, अं, अः, ऋ, ॠ
+
+      </p>
+
+      <p style="font-size:20px;">
+
+        36 Consonants (३६ व्यंजन): क, ख, ग, घ, ङ, च, छ, ज, झ, ञ, ट, ठ, ड, ढ, ण, त, थ, द, ध, न, प, फ, ब, भ, म, य, र, ल,
+        व, श, ष, स, ह
+
+      </p>
+
+      <p style="font-size:20px;">
+
+        3 Joint Words (संयुक्त अक्षर): क्ष, त्र, ज्ञ
+
+      </p>
+      <p style="font-size:20px;">
+
+        Full Stop (पूर्ण विराम): ।
+
+      </p>
+      <p style="font-size:20px;">
+        Numbers in Hindi (हिंदी में नंबर): १, २, ३, ४, ५, ६, ७, ८, ९, ०, .
+      </p>
+
+
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Hindi Language history -->
+
+
+<div class="panel panel-default panel-success col-sm-8">
+  <div class="panel-heading" style="font-size:23px">Hindi Language History</div>
+  <div class="panel-body">
+    <p style="font-size:20px;">
+      Hindi is the most commonly spoken language in India. It is the fifth most spoken language in the world with about 182 million native speakers in 1998. The script used in writing Hindi is Devanagari.
+
+    </p>
+    <p style="font-size:20px;">
+      Hindi is widely written, spoken and understood in north India and most other places in India. In 1997, a survey found that 66% of Indians can speak Hindi. The most common form of Hindi is known as Hindustani. It has taken words from the Dravidian languages of South India, many words from the Persian, Arabic, Turkish, English, and Portuguese languages.
+
+    </p>
+    <p style="font-size:20px;">
+
+      There are different types of Hindi Keyboard layout depending on the font used to type hindi. For E.g., if you use DevLys or Kurti Dev font you need Remington (also known as typewriter) layout. On the other hand, Mangal Unicode Font uses either Remington (GAIL) or Remington (CBI) keyboard layout.
+
+    </p>
+    
+    <p style="font-size:20px;">
+
+      On this page, you can find widely used hindi keyboard layout in various format and sizes, making it easy for you to either view it online, used it as a desktop wall paper, or print high resolution Hindi Keyboard layout.
+
+    </p>
+    
+    <p style="font-size:20px;">
+
+      Hindi, or more precisely Modern Standard Hindi, is a standardised and Sanskritised register of the Hindustani language (Hindi-Urdu). Hindustani is the native language of people living in Delhi, Haryana, Western Uttar Pradesh, Bihar, northeastern Madhya Pradesh, and parts of eastern Rajasthan, and Hindi is one of the official languages of India. Colloquial Hindi is mutually intelligible with another register of Hindustani, (Modern Standard) Urdu, which is associated with the Muslim religion. The two varieties of Hindustani are nearly identical in basic structure and grammar, and at a colloquial level also in vocabulary and phonology. Mutual intelligibility decreases in literary and specialised contexts, which rely on educated vocabulary drawn from different sources; Hindi drawing its specialised vocabulary from Sanskrit, whilst Urdu does so from Persian and Arabic.
+
+    </p>
+    
+    <p style="font-size:20px;">
+
+      People who identify as native speakers of Hindi include not only speakers of Hindustani who are Hindu, but also many speakers of related languages who consider their speech to be a dialect of Hindi. In the 2001 Indian census, 258 million people in India reported Hindi to be their native language; as of 2009, the best figure Ethnologue could find for speakers of actual Hindustani Hindi (effectively Khariboli dialect less Urdu) was a 1991 figure of 180 million. This makes Hindi approximately the sixth-largest language in the world.
+
+    </p>
+    <p style="font-size:20px;">
+
+      The Indian constitution, adopted in 1950, declares Hindi shall be written in the Devanagari script and will be the official language of the Federal Government of India. However, English continues to be used as an official language along with Hindi. Hindi is also enumerated as one of the twenty-two languages of the Eighth Schedule of the Constitution of India, which entitles it to representation on the Official Language Commission. The Constitution of India has effectively instituted the usage of Hindi and English as the two languages of communication for the Union Government. Most government documentation is prepared in three languages: English, Hindi, and the primary official language of the local state, if it is not Hindi or English.
+
+    </p>
+    <p style="font-size:20px;">
+      It was envisioned that Hindi would become the sole working language of the Central government by 1965 with state governments being free to function in the language of their own choice. However, widespread resistance to the imposition of Hindi on non-native speakers, especially in South India (such as the anti-Hindi agitations of Tamil Nadu) and in West Bengal, led to the passage of the Official Languages Act of 1963, which provided for the continued use of English indefinitely for all official purposes. However, the constitutional directive to champion the spread of Hindi was retained and has strongly influenced the policies of the Union government.
+
+    </p>
+    <p style="font-size:20px;">
+      At the state level, Hindi is the official language of the following states: Bihar, Jharkhand, Uttarakhand, Madhya Pradesh, Rajasthan, Uttar Pradesh, Chhattisgarh, Himachal Pradesh, Haryana and Delhi. Each may also designate a "co-official language"; in Uttar Pradesh for instance, depending on the political formation in power, sometimes this language is Urdu. Similarly, Hindi is accorded the status of co-official language in several additional states.
+
+    </p>
+    <p style="font-size:20px;">
+      The dialect upon which Standard Hindi is based is Khadiboli, the vernacular of Delhi and the surrounding western Uttar Pradesh and southern Uttarakhand region. This dialect acquired linguistic prestige in the Mughal Empire (17th century) and became known as Urdu, "the language of the court." As noted and referenced in History of Hindustani, prior to the independence of India and Pakistan, it was not referred to as Urdu but as Hindustani. After independence, the Government of India set about standardising Hindi as a separate language from Urdu.
+
+    </p>
+    
+    </p>
+  </div>
+</div>
+
+
+
+  <!-- -------- Footer -------- -->
+
+  <!-- Footer -->
+  <footer class="text-center bg-light text-muted">
+
+    <!-- Section: Links  -->
+    <section class="col-sm-12 col-md-12">
+      <div class="text-center text-md-start">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Hindi Translation
+            </h3>
+            <p style="font-size:20px;">
+              This is a simple website where you can convert any language to any other language while typing in real
+              time.
+              <br><br>
+              I've given my full potential to make it bug free but if you get any bug or error while using it, kindly
+              mail it to info@hinditranslation.com
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Translation links
+            </h3>
+            <p style="font-size:20px;">
+              <a href="#!" class="text-reset">Hindi to English</a>
+            </p>
+            <p style="font-size:20px;">
+              <a href="#!" class="text-reset">Hinglish to Hindi</a>
+            </p>
+            <p style="font-size:20px;">
+              <a href="#!" class="text-reset">English to Spanish</a>
+            </p>
+            <p style="font-size:20px;">
+              <a href="#!" class="text-reset">Arabic to English</a>
+            </p>
+            <p style="font-size:20px;">
+              <a href="#!" class="text-reset">Greek to Hindi</a>
+            </p>
+            <p style="font-size:20px;">
+              <a href="#!" class="text-reset">Bengali to Hindi</a>
+            </p>
+            <p style="font-size:20px;">
+              <a href="#!" class="text-reset">French to Hindi</a>
+            </p>
+            <p style="font-size:20px;">
+              <a href="#!" class="text-reset">Gujarati to Hindi</a>
+            </p>
+            <p style="font-size:20px;">
+              <a href="#!" class="text-reset">Italian to Hindi</a>
+            </p>
+            <p style="font-size:20px;">
+              <a href="#!" class="text-reset">Korean to Hindin</a>
+            </p>
+            <p style="font-size:20px;">
+              <a href="#!" class="text-reset">Latin to Hindi</a>
+            </p>
+            <p style="font-size:20px;">
+              <a href="#!" class="text-reset">Punjabi to Hindi</a>
+            </p>
+            <p style="font-size:20px;">
+              <a href="#!" class="text-reset">Tamil to Hindni</a>
+            </p>
+            <p style="font-size:20px;">
+              <a href="#!" class="text-reset">Turkish to Hindi</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+          <div>
+            <!-- PUT YOUR AD HERE -->
+
+          </div>
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+  </footer>
+  <!-- Footer -->
+
+  <!-- ------------------------------ -->
+
+
+
+  <!-- --------------------------- -->
+
+  <script>
+    const nav = document.getElementById("nav");
+    const icon = document.getElementById("icon");
+    const expand = (e) => {
+      nav.classList.toggle("active");
+      if (icon.classList.contains("fa-bars")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+      } else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+      }
+    };
+  </script>
+
+
+  <script>
+    function generateColor() {
+      var randomColor = (Math.floor(Math.random() * 16777216)).toString(16);
+      console.log(randomColor)
+      document.body.style.backgroundColor = "#" + randomColor;
+      var text = document.getElementById("text");
+      text.innerText = "#" + randomColor;
+    }
+
+  </script>
+
+
+  <script src="js/countries.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

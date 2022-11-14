@@ -1,0 +1,342 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} */
+body{
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  min-height: 100vh;
+  background-color: black;
+}
+.container{
+  max-width: 690px;
+  width: 100%;
+  /* padding: 30%; */
+  background: #faf3f3;
+  border-radius: 7px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.01);
+}
+.wrapper{
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 16%;
+  margin-left: 5px;
+}
+.wrapper .text-input{
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.text-input .to-text{
+  border-radius: 0px;
+  border-left: 1px solid #ccc;
+}
+.text-input textarea{
+  height: 250px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  /* color:#fff; */
+}
+.text-input textarea::placeholder{
+  color: #b7b6b6;
+}
+.controls, li, .icons, .icons i{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.controls{
+  list-style: none;
+  padding: 12px 15px;
+}
+.controls .row .icons{
+  width: 38%;
+}
+.controls .row .icons i{
+  width: 50px;
+  color: #adadad;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  justify-content: center;
+}
+.controls .row.from .icons{
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+.controls .row.to .icons{
+  padding-left: 15px;
+  border-left: 1px solid #ccc;
+}
+.controls .row select{
+  /* background-color: #ec4646; */
+  /* color: rgb(253, 236, 236); */
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: none;
+  padding-left: 5px;
+}
+.text-input textarea::-webkit-scrollbar{
+  width: 4px;
+}
+.controls .row select::-webkit-scrollbar{
+  width: 8px;
+}
+.text-input textarea::-webkit-scrollbar-track,
+.controls .row select::-webkit-scrollbar-track{
+  background: #fff;
+}
+.text-input textarea::-webkit-scrollbar-thumb{
+  background: #ddd;
+  border-radius: 8px;
+}
+.controls .row select::-webkit-scrollbar-thumb{
+  background: rgb(238, 238, 244);
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+.controls .exchange{
+  color: #adadad;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+.controls i:active{
+  transform: scale(0.9);
+}
+.container button{
+  width: 100%;
+  padding: 14px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #5372F0;
+}
+
+@media (max-width: 660px){
+  .container{
+    padding: 20px;
+  }
+  .wrapper .text-input{
+    flex-direction: column;
+  }
+  .text-input .to-text{
+    border-left: 0px;
+    border-top: 1px solid #ccc;
+  }
+  .text-input textarea{
+    height: 200px;
+  }
+  .controls .row .icons{
+    display: none;
+  }
+  .container button{
+    padding: 13px;
+    font-size: 16px;
+  }
+  .controls .row select{
+    font-size: 16px;
+  }
+  .controls .exchange{
+    font-size: 14px;
+  }
+}
+
+
+/* // ----------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+#text{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.generateBtn{
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #1687a7;
+    color: white;
+}
+
+
+
+/* ------ Nav bar ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+
+/* navbar */
+/* .nav {
+  width: 95%;
+  height: 115px;
+  border-radius: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #ffffff11;
+  overflow: hidden;
+  transition: all 0.4s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.212);
+} */
+.menu {
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.menu ul {
+  list-style: none;
+  margin-top: 50px;
+}
+.menu ul li {
+  float: none;
+  display: inline-block;
+  margin: 0 5px;
+}
+.menu ul li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  transition: all 0.4s;
+}
+.menu ul li a:hover {
+  background: rgba(110, 21, 235, 0.068);
+}
+.menu ul li:nth-child(3) {
+  float: right;
+}
+.menu ul li:nth-child(4) {
+  float: right;
+}
+.logo-container {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 10px;
+}
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.btn {
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  .menu {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+@media (max-width: 1000px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav.active {
+    height: 390px;
+  }
+  .nav {
+    height: 160px;
+  }
+  .menu {
+    width: 100%;
+    margin-top: 55px;
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .btn {
+    display: block;
+    margin-top: 50px;
+    background: none;
+    padding: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .menu ul li {
+    margin: 15px 25px;
+  }
+}
+
+p{
+  color:#2be572;
+  font-size: 20em;
+}
+
+.panel, .panel-heading{
+  background-color: rgb(0, 0, 0);
+  border: 0;
+}
+
+.navbar-brand img{
+  border-radius: 50%;
+  border: 2px solid firebrick;
+  height: 200%;
+  width: 100%;
+  margin: -18%;
+}
+
+.navbar{
+  font-size: 30px;
+  height: 100%;
+
+}
+
+.btn{
+  background-color: #2be572;
+  color: #5372F0;
+
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: rgb(11, 7, 7); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
