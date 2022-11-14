@@ -1,6 +1,7 @@
 # Language Translator
 
-> A simple language translator in Javascript
+> A simple language translator in Javascript  
+> Check it live [here](https://live-lang-translation.netlify.app/).  
 
 # How to run
 
